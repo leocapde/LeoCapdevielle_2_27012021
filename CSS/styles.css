@@ -1,0 +1,170 @@
+/* Éléments principaux */ 
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    max-width: 1200px;
+    min-width: 600px;
+    margin: auto;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img
+{
+    width: 50%;
+}
+
+#navigation
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li
+{
+    margin: 0px 15px;
+}
+
+#navigation a
+{
+    margin: 15px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+#navigation a:hover
+{
+    color: #0065FC;
+}
+
+#inscription
+{
+    margin: 15px 15px;
+}
+
+#inscription a
+{
+    color: #0065FC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#inscription a:hover
+{
+    color: black;
+}
+
+/* main */
+
+main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#filtres
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filtres ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#filtres li
+{
+    margin-right: 15px;
+    padding-right: 15px;
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+}
+
+#filtres i
+{
+    border: 3px solid #DEEBFF;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 10px;
+    color:  #0065FC;
+    background-color: #DEEBFF;
+}
+
+#recherche p i
+{
+    border: 3px solid #F2F2F2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+    color:  #0065FC;
+}
+/* Articles */
+
+#hebergements
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergements_marseille
+{
+    background-color: #F2F2F2;
+    padding: 0 20px;
+    border-radius: 20px;
+    flex: 1;
+    margin: 10px;
+}
+
+#hebergements aside
+{
+    background-color: #F2F2F2;
+    padding: 0 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    padding: 30px 0;
+}
+
+footer div ul
+{
+    list-style-type: none;
+}
+
+footer div ul li
+{
+    margin: 10px 0 10px -45px;
+}
+
+footer a
+{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: #0065FC;
+}
