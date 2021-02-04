@@ -1,7 +1,6 @@
-/* Éléments principaux */ 
+/* Éléments principaux */
 
-body
-{
+body {
     font-family: 'Raleway', sans-serif;
     max-width: 1200px;
     min-width: 600px;
@@ -10,119 +9,137 @@ body
 
 /* Header */
 
-header
-{
+header {
     display: flex;
     justify-content: space-between;
+    margin: 0 20px;
 }
 
-header img
-{
-    width: 50%;
+header img {
+    width: 150px;
 }
 
-#navigation
-{
+#navigation {
     display: flex;
-    margin-top: 20px;
+    align-items: center;
 }
 
-nav ul
-{
+nav ul {
     list-style-type: none;
     display: flex;
 }
 
-nav ul li
-{
-    margin: 0px 15px;
+nav ul li {
+    padding: 0 15px;
 }
 
-#navigation a
-{
-    margin: 15px 15px;
+#navigation a {
+    margin-right: 15pxx;
     color: black;
     text-decoration: none;
 }
 
-#navigation a:hover
-{
+#navigation nav a:hover {
     color: #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
-#inscription
-{
-    margin: 15px 15px;
-}
-
-#inscription a
-{
+#inscription a {
     color: #0065FC;
     text-decoration: none;
     font-weight: bold;
+    margin-left: 15px;
 }
 
-#inscription a:hover
-{
+#inscription a:hover {
     color: black;
 }
 
 /* main */
 
-main
-{
+main {
     display: flex;
     flex-direction: column;
 }
 
-#filtres
-{
+#recherche {
+    margin: 0 20px;
+}
+
+#recherche form i {
+    border: 1px solid #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    background-color: #F2F2F2;
+    color: black;
+}
+
+input[type=search] {
+    border: 1px solid #F2F2F2;
+    padding: 10px;
+    margin-left: -5px;
+}
+
+input[type=submit] {
+    border: 1px solid #0065FC;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    margin-left: -5px;
+    color: white;
+    background-color: #0065FC;
+}
+
+input[type=submit]:hover {
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    color: black;
+}
+
+#filtres {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-#filtres ul
-{
+#filtres ul {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
 }
 
-#filtres li
-{
-    margin-right: 15px;
+#filtres li {
+    margin: 5px 15px 5px 0;
     padding-right: 15px;
     border: 3px solid #F2F2F2;
     border-radius: 30px;
 }
 
-#filtres i
-{
+#filtres i {
     border: 3px solid #DEEBFF;
     padding: 10px;
     border-radius: 30px;
     margin-right: 10px;
-    color:  #0065FC;
+    color: #0065FC;
     background-color: #DEEBFF;
 }
 
-#recherche p i
-{
+#info i {
     border: 3px solid #F2F2F2;
     padding: 5px 10px;
     border-radius: 20px;
-    margin: 0 10px;
-    color:  #0065FC;
+    margin-right: 10px;
+    color: #0065FC;
 }
-/* Articles */
 
-#hebergements
-{
+/* Hébergements */
+
+#hebergements {
     display: flex;
     justify-content: space-between;
 }
 
-#hebergements_marseille
-{
+#hebergements_marseille {
     background-color: #F2F2F2;
     padding: 0 20px;
     border-radius: 20px;
@@ -130,41 +147,44 @@ main
     margin: 10px;
 }
 
-#hebergements aside
-{
+#hebergements aside {
     background-color: #F2F2F2;
     padding: 0 20px;
     border-radius: 20px;
     margin: 10px;
 }
 
-/* Footer */
+/* Activités */
 
-footer
-{
-    display: flex;
-    justify-content: space-around;
-    background-color: #F2F2F2;
-    padding: 30px 0;
+#activites {
+    margin: 20px;
 }
 
-footer div ul
-{
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer div ul {
     list-style-type: none;
 }
 
-footer div ul li
-{
-    margin: 10px 0 10px -45px;
+footer div ul li {
+    margin: 10px 0 10px -40px;
 }
 
-footer a
-{
+footer a {
     color: black;
     text-decoration: none;
 }
 
-footer a:hover
-{
+footer a:hover {
     color: #0065FC;
 }
