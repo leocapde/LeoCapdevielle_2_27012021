@@ -147,6 +147,46 @@ input[type=submit]:hover {
     margin: 10px;
 }
 
+#hotel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.chambre {
+    background-color: white;
+    width: 250px;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.chambre img {
+    width: 250px;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.chambre figcaption {
+    font-weight: bold;
+}
+
+.chambre figcaption,
+p {
+    padding-left: 10px;
+}
+
+.chambre p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+
+.chambre i {
+    color: #0065FC;
+}
+
 #hebergements aside {
     background-color: #F2F2F2;
     padding: 0 20px;
