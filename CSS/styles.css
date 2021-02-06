@@ -156,14 +156,14 @@ input[type=submit]:hover {
 
 .chambre {
     background-color: white;
-    width: 250px;
+    width: 220px;
     border: 3px solid white;
     border-radius: 20px;
     margin: 10px;
 }
 
 .chambre img {
-    width: 250px;
+    width: 220px;
     height: 120px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -192,6 +192,63 @@ p {
     padding: 0 20px;
     border-radius: 20px;
     margin: 10px;
+}
+
+#titre_pop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#populaire {
+    display: flex;
+    flex-direction: column;
+}
+
+.chambre_pop {
+    background-color: white;
+    width: 290px;
+    height: 120px;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.chambre_pop img {
+    width: 110px;
+    height: 120px;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+#texte_pop {
+    position: relative;
+}
+
+.chambre_pop figcaption {
+    font-weight: bold;
+}
+
+.chambre_pop figcaption,
+p {
+    padding-left: 10px;
+}
+
+.chambre_pop p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+
+.chambre_pop p:last-child {
+    position: absolute;
+    bottom: 3px;
+}
+
+.chambre_pop i {
+    color: #0065FC;
 }
 
 /* Activités */
