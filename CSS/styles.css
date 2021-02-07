@@ -257,6 +257,42 @@ p {
     margin: 20px;
 }
 
+#activites_marseille {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.activites_marseille_colonne {
+    display: flex;
+    flex-direction: column;
+}
+
+.lieu_marseille {
+    background-color: white;
+    width: 250px;
+    box-shadow: 5px 5px 20px #F2F2F2;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.lieu_marseille img {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.activites_marseille_colonne img {
+    height: 120px;
+}
+
+.lieu_marseille figcaption {
+    font-weight: bold;
+    padding: 10px;
+}
+
 /* Footer */
 
 footer {
