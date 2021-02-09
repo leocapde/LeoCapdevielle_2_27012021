@@ -19,8 +19,12 @@
         <div id="navigation">
             <nav>
                 <ul>
-                    <li><a href="#hebergements">Hébergements</a></li>
-                    <li><a href="#activites">Activtés</a></li>
+                    <a href="#hebergements">
+                        <li>Hébergements</li>
+                    </a>
+                    <a href="#activites">
+                        <li>Activtés</li>
+                    </a>
                 </ul>
             </nav>
 
@@ -36,19 +40,30 @@
             <p>En plein centre ville ou en pleine nature</p>
             <form method="POST" action="">
                 <p>
-                    <label><i class="fas fa-map-marker-alt"></i></label>
-                    <input type="search" name="ville" id="ville" value="Marseille, France" />
-                    <input type="submit" value="Rechercher" />
+                    <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
+                    <input type="search" class="ville" id="ville" value="Marseille, France" />
+                    <input type="submit" class="ville" value="Rechercher" />
                 </p>
             </form>
 
             <div id="filtres">
                 <h3>Filtres</h3>
                 <ul>
-                    <li><i class="fas fa-money-bill-wave"></i> Économique</li>
-                    <li><i class="fas fa-child"></i> Familial</li>
-                    <li><i class="fas fa-heart"></i> Romantique</li>
-                    <li><i class="fas fa-dog"></i> Animaux autorisés</li>
+                    <li>
+                        <input type="checkbox" class="filtres" id="economique">
+                        <label for="economique"><i class="fas fa-money-bill-wave"></i>Économique</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="filtres" id="familial">
+                        <label for="familial"><i class="fas fa-child"></i> Familial</label></li>
+                    <li>
+                        <input type="checkbox" class="filtres" id="romantique">
+                        <label for="romantique"><i class="fas fa-heart"></i> Romantique</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="filtres" id="animaux">
+                        <label for="animaux"><i class="fas fa-dog"></i> Animaux autorisés</label>
+                    </li>
                 </ul>
             </div>
 

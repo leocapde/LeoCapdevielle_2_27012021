@@ -12,11 +12,12 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 20px;
 }
 
 header img {
-    width: 150px;
+    width: 125px;
 }
 
 #navigation {
@@ -24,13 +25,21 @@ header img {
     align-items: center;
 }
 
+#navigation nav {
+    margin: auto;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
+    align-items: center;
+    height: 100px;
+    margin: auto 0;
 }
 
 nav ul li {
     padding: 0 15px;
+    margin: 38px 0;
 }
 
 #navigation a {
@@ -75,32 +84,33 @@ main figure:hover {
     margin: 0 20px;
 }
 
-#recherche form i {
-    border: 1px solid #F2F2F2;
+#recherche form label {
+    border: 2px solid #F2F2F2;
     border-radius: 10px 0 0 10px;
-    padding: 10px;
+    padding: 7px 10px 10px 10px;
     background-color: #F2F2F2;
-    color: black;
 }
 
 input[type=search] {
-    border: 1px solid #F2F2F2;
-    padding: 10px;
-    margin-left: -5px;
+    border: 2px solid #F2F2F2;
+    padding: 10px 15px;
+    margin-left: -4px;
+    font-weight: bold;
 }
 
 input[type=submit] {
-    border: 1px solid #0065FC;
+    border: 2px solid #0065FC;
     border-radius: 0 10px 10px 0;
-    padding: 10px;
-    margin-left: -5px;
-    color: white;
+    padding: 10px 15px;
+    margin-left: -4px;
     background-color: #0065FC;
+    color: white;
+    font-weight: bold;
 }
 
 input[type=submit]:hover {
+    border: 2px solid #F2F2F2;
     background-color: #DEEBFF;
-    border: 1px solid #DEEBFF;
     color: black;
 }
 
@@ -119,18 +129,46 @@ input[type=submit]:hover {
 
 #filtres li {
     margin: 5px 15px 5px 0;
-    padding-right: 15px;
-    border: 3px solid #F2F2F2;
-    border-radius: 30px;
 }
 
-#filtres i {
+input[type=checkbox].filtres {
+    display: none;
+    /* Fait disparaitre la case a cocher */
+}
+
+input[type=checkbox].filtres+label {
+    padding: 10px 15px 10px 0;
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+input[type=checkbox].filtres+label i {
     border: 3px solid #DEEBFF;
     padding: 10px;
     border-radius: 30px;
     margin-right: 10px;
+    margin-left: -1px;
     color: #0065FC;
     background-color: #DEEBFF;
+    min-width: 15px;
+}
+
+input[type=checkbox].filtres:hover+label i {
+    border: 3px solid #0065FC;
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+input[type=checkbox].filtres:checked+label {
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+input[type=checkbox].filtres:checked+label i {
+    border: 3px solid #0065FC;
+    color: #DEEBFF;
+    background-color: #0065FC;
 }
 
 #info i {
