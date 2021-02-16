@@ -87,14 +87,14 @@ main figure:hover {
 #recherche form label {
     border: 2px solid #F2F2F2;
     border-radius: 10px 0 0 10px;
-    padding: 7px 10px 10px 10px;
+    padding: 7.5px 10px 11px 10px;
     background-color: #F2F2F2;
 }
 
 input[type=search] {
     border: 2px solid #F2F2F2;
     padding: 10px 15px;
-    margin-left: -4px;
+    margin-left: -5px;
     font-weight: bold;
 }
 
@@ -102,7 +102,7 @@ input[type=submit] {
     border: 2px solid #0065FC;
     border-radius: 0 10px 10px 0;
     padding: 10px 15px;
-    margin-left: -4px;
+    margin-left: -5px;
     background-color: #0065FC;
     color: white;
     font-weight: bold;
@@ -184,6 +184,7 @@ input[type=checkbox].filtres:checked+label i {
 #hebergements {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 #hebergements_marseille {
@@ -192,6 +193,15 @@ input[type=checkbox].filtres:checked+label i {
     border-radius: 20px;
     flex: 1;
     margin: 10px;
+}
+
+#hebergements_marseille h2 {
+    margin: 30px 0 10px 15px;
+    font-size: 1.3em;
+}
+
+#hebergements_marseille h4 {
+    margin: 20px 0 30px 15px;
 }
 
 #hebergements_marseille h4 a:hover {
@@ -208,7 +218,7 @@ input[type=checkbox].filtres:checked+label i {
 .chambre {
     background-color: white;
     width: 220px;
-    border: 3px solid white;
+    border: 4px solid white;
     border-radius: 20px;
     margin: 10px;
 }
@@ -216,31 +226,33 @@ input[type=checkbox].filtres:checked+label i {
 .chambre img {
     width: 220px;
     height: 120px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
 .chambre figcaption {
     font-weight: bold;
-}
-
-.chambre figcaption,
-p {
-    padding-left: 10px;
+    font-size: 0.9em;
+    padding: 0 10px;
+    margin-top: 5px;
 }
 
 .chambre p {
-    margin: 3px 0;
-    font-size: 0.9em;
+    margin: 5px 0;
+    font-size: 0.7em;
 }
 
-.chambre i {
+#star1 {
     color: #0065FC;
+}
+
+#star2 {
+    color: #F2F2F2;
 }
 
 #hebergements aside {
     background-color: #F2F2F2;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     border-radius: 20px;
     margin: 10px;
 }
@@ -250,6 +262,12 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 15px 15px 0 15px;
+    /* font-size: 1.3em; */
+}
+
+#titre_pop h2 {
+    font-size: 1.3em;
 }
 
 #populaire {
@@ -260,8 +278,8 @@ p {
 .chambre_pop {
     background-color: white;
     width: 290px;
-    height: 120px;
-    border: 3px solid white;
+    height: 128px;
+    border: 4px solid white;
     border-radius: 20px;
     margin: 10px;
 }
@@ -273,17 +291,19 @@ p {
 
 .chambre_pop img {
     width: 110px;
-    height: 120px;
-    border-radius: 20px 0 0 20px;
+    height: 128px;
+    border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
 
 #texte_pop {
     position: relative;
+    padding: 10px;
 }
 
 .chambre_pop figcaption {
     font-weight: bold;
+    font-size: 0.9em;
 }
 
 .chambre_pop figcaption,
@@ -292,13 +312,13 @@ p {
 }
 
 .chambre_pop p {
-    margin: 3px 0;
-    font-size: 0.9em;
+    margin: 5px 0;
+    font-size: 0.7em;
 }
 
 .chambre_pop p:last-child {
     position: absolute;
-    bottom: 3px;
+    bottom: 5px;
 }
 
 .chambre_pop i {
@@ -318,6 +338,13 @@ p {
     justify-content: space-around;
 }
 
+.activites_marseille_part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+}
+
 .activites_marseille_colonne {
     display: flex;
     flex-direction: column;
@@ -333,13 +360,27 @@ p {
 
 .lieu_marseille img {
     width: 250px;
-    height: 300px;
+    height: 310px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+    object-position: 50% 35%;
+}
+
+.lieu_marseille figcaption {
+    font-size: 0.9em;
+    margin: 5px;
 }
 
 .activites_marseille_colonne img {
     height: 120px;
+}
+
+img.r1 {
+    height: 165px;
+}
+
+img.r2 {
+    height: 75px;
 }
 
 .lieu_marseille figcaption {
@@ -352,7 +393,7 @@ p {
 footer {
     display: flex;
     background-color: #F2F2F2;
-    padding: 30px;
+    padding: 35px;
 }
 
 footer div {
@@ -365,6 +406,7 @@ footer div ul {
 
 footer div ul li {
     margin: 10px 0 10px -40px;
+    font-size: 0.9em;
 }
 
 footer a {
