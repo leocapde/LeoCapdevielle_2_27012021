@@ -3,13 +3,12 @@
 body {
     font-family: 'Raleway', sans-serif;
     max-width: 1200px;
-    min-width: 600px;
     margin: auto;
 }
 
 /* Header */
 
-header {
+#en_tete {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +22,10 @@ header img {
 #navigation {
     display: flex;
     align-items: center;
+}
+
+#nav_smartphone {
+    display: none;
 }
 
 #navigation nav {
@@ -43,7 +46,6 @@ nav ul li {
 }
 
 #navigation a {
-    margin-right: 15pxx;
     color: black;
     text-decoration: none;
 }
@@ -62,6 +64,7 @@ nav ul li {
 
 #inscription a:hover {
     color: black;
+    border-bottom: 3px solid black;
 }
 
 /* main */
@@ -78,6 +81,7 @@ main a {
 
 main figure:hover {
     box-shadow: 5px 5px 5px gray;
+    transition: all 0.5s;
 }
 
 #recherche {
@@ -87,7 +91,7 @@ main figure:hover {
 #recherche form label {
     border: 2px solid #F2F2F2;
     border-radius: 10px 0 0 10px;
-    padding: 7.5px 10px 11px 10px;
+    padding: 7px 10px 10px 10px;
     background-color: #F2F2F2;
 }
 
@@ -112,6 +116,7 @@ input[type=submit]:hover {
     border: 2px solid #F2F2F2;
     background-color: #DEEBFF;
     color: black;
+    transition: all 0.5s;
 }
 
 #filtres {
@@ -158,11 +163,13 @@ input[type=checkbox].filtres:hover+label i {
     border: 3px solid #0065FC;
     color: #DEEBFF;
     background-color: #0065FC;
+    transition: all 0.5s;
 }
 
 input[type=checkbox].filtres:checked+label {
     background-color: #DEEBFF;
     color: #0065FC;
+    transition: all 0.5s;
 }
 
 input[type=checkbox].filtres:checked+label i {
@@ -247,7 +254,8 @@ input[type=checkbox].filtres:checked+label i {
 }
 
 #star2 {
-    color: #F2F2F2;
+    /* color: #F2F2F2; */
+    color: rgba(128, 128, 128, 0.5);
 }
 
 #hebergements aside {
@@ -336,13 +344,6 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.activites_marseille_part {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 1;
 }
 
 .activites_marseille_colonne {
