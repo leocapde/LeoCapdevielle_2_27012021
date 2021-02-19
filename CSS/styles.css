@@ -178,6 +178,12 @@ input[type=checkbox].filtres:checked+label i {
     background-color: #0065FC;
 }
 
+#info {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
 #info i {
     border: 3px solid #F2F2F2;
     padding: 5px 10px;
@@ -341,9 +347,12 @@ p {
 
 #activites_marseille {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.activites_marseille_part {
+    display: flex;
 }
 
 .activites_marseille_colonne {
@@ -356,7 +365,7 @@ p {
     width: 250px;
     box-shadow: 5px 5px 20px #F2F2F2;
     border-radius: 20px;
-    margin: 10px;
+    margin: 10px 15px;
 }
 
 .lieu_marseille img {
