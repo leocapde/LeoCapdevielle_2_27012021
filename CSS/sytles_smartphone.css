@@ -38,25 +38,42 @@ header {
 }
 
 #nav_smartphone nav li {
-    margin: 15px 0 15px -15px;
+    margin: 15px -15px;
     width: 100%;
     text-align: center;
+    border-bottom: 3px solid #F2F2F2;
+    padding: 15px 0;
+}
+
+#nav_smartphone nav li:hover {
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
 }
 
 #nav_smartphone a {
     color: black;
     text-decoration: none;
-    border-bottom: 3px solid #F2F2F2;
     width: 100%;
 }
 
-#nav_smartphone nav a:hover {
-    color: #0065FC;
-    border-bottom: 3px solid #0065FC;
-    transition: all 0.5s;
+/* Main */
+
+input[type=search] {
+    width: max-content;
 }
 
-/* Main */
+#rechercher_texte {
+    display: none;
+}
+
+#rechercher_logo {
+    display: inline;
+}
+
+button[type=submit] {
+    border-radius: 15px;
+    margin-left: -15px;
+}
 
 #filtres h3 {
     margin: auto 0;
@@ -74,17 +91,26 @@ header {
 
 #hebergements aside {
     margin: auto;
-    width: auto;
     border-radius: 0;
+    align-items: center;
 }
 
 .chambre_pop {
+    /* width: 350px; */
     width: auto;
+    max-width: 385px;
 }
+
+/* #titre_pop {
+    background-color: aqua;
+}
+
+#populaire {
+    background-color: beige;
+} */
 
 #hebergements_marseille {
     margin: auto;
-    width: auto;
     background-color: transparent;
 }
 
@@ -105,7 +131,6 @@ header {
 /* Activités */
 
 #activites {
-    width: auto;
     max-width: 405px;
     margin: auto;
     padding: 20px;
