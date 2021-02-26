@@ -38,7 +38,7 @@ header {
 }
 
 #nav_smartphone nav li {
-    margin: 15px -15px;
+    margin: 15px 0;
     width: 100%;
     text-align: center;
     border-bottom: 3px solid #F2F2F2;
@@ -46,20 +46,27 @@ header {
 }
 
 #nav_smartphone nav li:hover {
-    color: #0065FC;
     border-bottom: 3px solid #0065FC;
 }
 
 #nav_smartphone a {
     color: black;
     text-decoration: none;
-    width: 100%;
+    padding: 15px 0;
+}
+
+#nav_smartphone nav a:hover {
+    color: #0065FC;
 }
 
 /* Main */
 
+#recherche form p {
+    display: flex;
+}
+
 input[type=search] {
-    width: max-content;
+    flex: 1;
 }
 
 #rechercher_texte {
@@ -91,23 +98,15 @@ button[type=submit] {
 
 #hebergements aside {
     margin: auto;
+    padding: 0;
     border-radius: 0;
-    align-items: center;
+    width: 100%;
+    max-width: 410px;
 }
 
 .chambre_pop {
-    /* width: 350px; */
     width: auto;
-    max-width: 385px;
 }
-
-/* #titre_pop {
-    background-color: aqua;
-}
-
-#populaire {
-    background-color: beige;
-} */
 
 #hebergements_marseille {
     margin: auto;
@@ -155,6 +154,10 @@ button[type=submit] {
 
 img.r1 {
     object-position: 50% 45%;
+}
+
+img.r2 {
+    object-position: 50% 30%;
 }
 
 /* Footer */
