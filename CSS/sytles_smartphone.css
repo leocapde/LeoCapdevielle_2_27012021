@@ -110,6 +110,9 @@ button[type=submit] {
 
 #hebergements_marseille {
     margin: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 410px;
     background-color: transparent;
 }
 
@@ -130,13 +133,23 @@ button[type=submit] {
 /* Activités */
 
 #activites {
-    max-width: 405px;
     margin: auto;
     padding: 20px;
 }
 
+#activites_marseille {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 410px;
+}
+
 .activites_marseille_part {
     flex-direction: column;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 410px;
 }
 
 .lieu_marseille {
@@ -157,7 +170,7 @@ img.r1 {
 }
 
 img.r2 {
-    object-position: 50% 30%;
+    object-position: 50% 25%;
 }
 
 /* Footer */
