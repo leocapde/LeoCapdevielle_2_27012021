@@ -8,7 +8,7 @@ body {
 
 /* Header */
 
-#en_tete {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,11 +24,7 @@ header img {
     align-items: center;
 }
 
-#nav_smartphone {
-    display: none;
-}
-
-#navigation nav {
+nav {
     margin: auto;
 }
 
